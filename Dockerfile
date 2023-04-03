@@ -13,6 +13,6 @@ RUN go build -o /synology-dsm-notification-lark
 FROM alpine:latest
 COPY --from=builder /synology-dsm-notification-lark /synology-dsm-notification-lark
 
-EXPOSE 8080
+EXPOSE 10080
 
 CMD [ "./synology-dsm-notification-lark" ]
